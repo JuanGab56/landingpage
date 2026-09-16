@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academia de Programación: cursos prácticos de desarrollo web, Python y JavaScript.">
+  <title>CodeMaster | Academia de Programación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">&lt;CodeMaster/&gt;</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Aprende. Programa. Crea.</span>
+          <h1>Conviértete en desarrollador y crea proyectos reales</h1>
+          <p>
+            Aprende programación desde cero con cursos prácticos, proyectos guiados
+            y tecnologías utilizadas actualmente en el desarrollo de software.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#cursos" class="btn btn-primary">Ver cursos</a>
+            <a href="#contacto" class="btn btn-outline">Solicitar información</a>
+          </div>
+
+          <div class="stats">
+            <div>
+              <strong>+500</strong>
+              <span>Estudiantes</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>Cursos</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Práctico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-card">
+          <div class="code-header">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code><span class="purple">const</span> estudiante = {
+  nombre: <span class="green">"Tu nombre"</span>,
+  nivel: <span class="green">"Principiante"</span>,
+  objetivo: <span class="green">"Ser developer"</span>
+};
+
+<span class="blue">function</span> <span class="yellow">aprenderProgramacion</span>() {
+  estudiante.nivel = <span class="green">"Profesional"</span>;
+  <span class="purple">return</span> <span class="green">"¡Meta alcanzada!"</span>;
+}
+
+aprenderProgramacion();</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cursos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Nuestros cursos</span>
+          <h2>Empieza tu camino en programación</h2>
+          <p>Programas diseñados para aprender haciendo.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🌐</div>
+            <h3>Desarrollo Web</h3>
+            <p>Aprende HTML, CSS y JavaScript creando sitios web modernos y responsivos.</p>
+            <a href="#contacto">Más información →</a>
+          </article>
+
+          <article class="card">
+            <div class="icon">🐍</div>
+            <h3>Python desde Cero</h3>
+            <p>Domina los fundamentos de Python y desarrolla programas y automatizaciones.</p>
+            <a href="#contacto">Más información →</a>
+          </article>
+
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Agrega interactividad a tus páginas y aprende bases para aplicaciones web.</p>
+            <a href="#contacto">Más información →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="beneficios">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">¿Por qué elegirnos?</span>
+          <h2>Aprendizaje orientado a proyectos</h2>
+        </div>
+
+        <div class="benefits">
+          <div class="benefit">
+            <span>01</span>
+            <h3>Clases prácticas</h3>
+            <p>Aprende desarrollando ejercicios y proyectos desde la primera clase.</p>
+          </div>
+          <div class="benefit">
+            <span>02</span>
+            <h3>Proyectos reales</h3>
+            <p>Crea trabajos que podrás incluir en tu portafolio profesional.</p>
+          </div>
+          <div class="benefit">
+            <span>03</span>
+            <h3>Acompañamiento</h3>
+            <p>Avanza paso a paso con orientación durante tu proceso de aprendizaje.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact-box">
+        <div>
+          <span class="eyebrow">Empieza hoy</span>
+          <h2>Da el primer paso hacia tu futuro tecnológico</h2>
+          <p>Déjanos tus datos y te enviaremos información sobre nuestros cursos.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="nombre" placeholder="Nombre completo" required>
+          <input type="email" id="email" placeholder="Correo electrónico" required>
+          <select id="curso" required>
+            <option value="">Selecciona un curso</option>
+            <option>Desarrollo Web</option>
+            <option>Python desde Cero</option>
+            <option>JavaScript</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Solicitar información</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> CodeMaster - Academia de Programación.</p>
+      <p>Aprende tecnología construyendo proyectos.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
